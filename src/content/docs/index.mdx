@@ -1,40 +1,83 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Apuntes Matemáticas UNED
+description: Documentación completa y estructurada de las asignaturas del Grado en Matemáticas de la UNED
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Apuntes organizados, estructurados y fácilmente accesibles de todas las asignaturas del Grado en Matemáticas de la UNED
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Ver Guía de Uso
+      link: /guia-uso/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      variant: primary
+    - text: Primer Curso
+      link: /primer-curso/semestre-1/algebra-lineal-i/
+      icon: open-book
+    - text: GitHub
+      link: https://github.com/javirub/Maths-UNED
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Estructura del Grado
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Primer Curso" icon="open-book">
+		**Semestre 1**: Álgebra Lineal I, Funciones de Una Variable I, Lenguaje Matemático, Estadística Básica, Matemática Discreta
+
+		**Semestre 2**: Álgebra Lineal II, Funciones de Una Variable II, Funciones de Varias Variables I, Física, Geometría Básica
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+
+	<Card title="Segundo Curso" icon="document">
+		**Semestre 1**: Geometrías Lineales, Funciones de Varias Variables II, Cálculo de Probabilidades I, Estructuras Algebraicas, Herramientas Informáticas
+
+		**Semestre 2**: Programación Lineal, Variable Compleja, Análisis Numérico, Álgebra, Lenguajes de Programación
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+
+	<Card title="Tercer Curso" icon="puzzle">
+		**Semestre 1**: Topología, Ecuaciones Diferenciales, Cálculo de Probabilidades II, Espacios de Hilbert, Campos y Formas
+
+		**Semestre 2**: Geometría Diferencial, Análisis de Fourier, Resolución Numérica, Modelización, Inferencia Estadística
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+
+	<Card title="Cuarto Curso" icon="star">
+		**Trabajo Fin de Grado** (15 ECTS)
+
+		**Optativas**: 18 asignaturas optativas en análisis, álgebra, topología, estadística, física y astronomía
 	</Card>
 </CardGrid>
+
+## Características
+
+<CardGrid>
+	<Card title="Organización Clara" icon="list-format">
+		Todas las asignaturas organizadas por curso y semestre para una navegación intuitiva.
+	</Card>
+
+	<Card title="Búsqueda Rápida" icon="magnifier">
+		Sistema de búsqueda integrado para encontrar rápidamente el contenido que necesitas.
+	</Card>
+
+	<Card title="Responsive" icon="laptop">
+		Accede a los apuntes desde cualquier dispositivo: ordenador, tablet o móvil.
+	</Card>
+
+	<Card title="En Desarrollo" icon="rocket">
+		Proyecto activo con contenido que se actualiza y mejora constantemente.
+	</Card>
+</CardGrid>
+
+## Estado del Proyecto
+
+🚧 **En desarrollo activo**: Este proyecto está siendo desarrollado de forma continua. Muchas asignaturas tienen contenido pendiente de completar.
+
+📚 **Contribuciones bienvenidas**: Si eres estudiante de la UNED y quieres contribuir con apuntes, correcciones o mejoras, visita nuestro [repositorio en GitHub](https://github.com/javirub/Maths-UNED).
+
+## Recursos Adicionales
+
+- [UNED - Grado en Matemáticas](https://www.uned.es/universidad/inicio/estudios/grados/grado-en-matematicas.html)
+- [Aula Virtual UNED](https://www.uned.es/)
+- [Biblioteca UNED](https://biblioteca.uned.es/)

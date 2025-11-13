@@ -1,7 +1,8 @@
 {
-  "name": "maths-starlight",
+  "name": "apuntes-matematicas-uned",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "description": "Documentación completa y estructurada de las asignaturas del Grado en Matemáticas de la UNED",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
