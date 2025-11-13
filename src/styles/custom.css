@@ -1,0 +1,4 @@
+/* Importar estilos de KaTeX para renderizado de matemáticas */
+@import 'katex/dist/katex.min.css';
+
+/* Estilos personalizados adicionales pueden ir aquí */

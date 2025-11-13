@@ -1,14 +1,21 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
+	markdown: {
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatex],
+	},
 	integrations: [
 		starlight({
 			title: 'Apuntes Matemáticas UNED',
 			description: 'Documentación completa y estructurada de las asignaturas del Grado en Matemáticas de la UNED',
 			defaultLocale: 'es',
+			customCss: ['./src/styles/custom.css'],
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/javirub/Maths-UNED' }
 			],
@@ -18,6 +25,17 @@ export default defineConfig({
 					items: [
 						{ label: 'Bienvenida', slug: 'index' },
 						{ label: 'Guía de Uso', slug: 'guia-uso' },
+					],
+				},
+				{
+					label: 'Referencia Matemática',
+					collapsed: true,
+					items: [
+						{ label: 'Símbolos Matemáticos', slug: 'referencia/simbolos' },
+						{ label: 'Alfabeto Griego', slug: 'referencia/alfabeto-griego' },
+						{ label: 'Conjuntos y Notación', slug: 'referencia/conjuntos' },
+						{ label: 'Operadores', slug: 'referencia/operadores' },
+						{ label: 'Estructuras Algebraicas', slug: 'referencia/estructuras-algebraicas' },
 					],
 				},
 				{
